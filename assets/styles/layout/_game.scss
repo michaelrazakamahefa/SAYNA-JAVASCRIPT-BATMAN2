@@ -1,0 +1,86 @@
+// Design de la partie Hero
+#hero_game {
+    background-position: top center;
+    background-image: url(../Illustrations_game/Batgame_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(130vh - 30px);
+  
+   
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 60%;
+      padding-top: 140px;
+      .titre {
+        @extend %titre;
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-size: 60px;
+        text-transform: uppercase;
+      }
+    }
+    .fleche {
+      display: block;
+      margin: 0 auto;
+      width: 80px;
+      margin-top: 20rem;
+    }
+  }
+  .wrapped {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .questions {
+      .nombredequestions {
+        margin: 20px 0;
+      }
+      .card-quizz {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        .card-image img {
+          width: 80%;
+        }
+
+        .question-quizz{
+          margin: 20px 0;
+        }
+        .qcm {
+          background-color: darkgray;
+          margin: 10px;
+          padding: 5px;
+          font-size: 20px;
+        }
+      }
+    }
+    .btn-game {
+      padding: 40px 0;
+      button {
+        background: linear-gradient(
+          143deg,
+          rgba(121,120, 118, 0.5),
+          rgba(228, 122, 1, 0.6) 80%
+        );
+        &:hover {
+          background: linear-gradient(
+          143deg,
+          rgb(121,120, 118),
+          rgb(167, 89, 0) 80%
+        );
+        }
+        padding: 15px 30px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+
+  }

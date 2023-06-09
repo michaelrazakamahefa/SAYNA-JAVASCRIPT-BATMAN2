@@ -1,0 +1,461 @@
+@font-face {
+  font-family: 'rajdhani';
+  src: url(../police/Rajdhani-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Space grotesk';
+  src: url(../police/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+  --yellow-color: #FFFF00;
+  --yellow-light: #f8f184;
+  --blue-color: #19587d;
+  --red-color:#B11313;
+  --black-alt:#0D0E09;
+  --color-grad-00:#EDDEBF;
+  --color-grad-01:#19587D;
+  --color-grad-11:#890008;
+  --color-gray:#C4C4C4;
+  --black-color: #000000;
+  --white-color: #ffff;
+  --gradient-white: #EDDEBF67;
+  --gradient-red: #89000978;
+
+ 
+
+}
+
+/* Réinitialisation des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles pour les titres de niveau 1 */
+h1 {
+  font-family: 'rajdhani';
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h2{
+  font-family: 'Space Grotesk';
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+/* Styles pour les boutons */
+button {
+  font-family: 'rajdhani';
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Conteneur principal */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*Styles des bordures*/
+
+.up-bar {
+  border-top: 4px solid #BCBBBD;
+  position: absolute;
+  top: 132px;
+  width: calc(100% - 208px); /* Largeur ajustée en fonction de l'espace sur les côtés */
+  left: 102px;
+  opacity: 0.2;
+}
+
+.left-bar {
+  border-left: 4px solid #BCBBBD;
+  position: absolute;
+  top: 0;
+  left: 102px;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.right-bar {
+  border-right: 4px solid #BCBBBD;
+  position: absolute;
+  top: 0;
+  right: 102px;
+  height: 100%;
+  opacity: 0.2;
+}
+
+/* Styles généraux pour le corps de la page */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Space grotesk';
+  font-weight: 400;
+}
+
+/* Styles pour la navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+ul {
+  list-style: none;
+      margin: 0;
+  padding: 0;
+    display: flex;
+}
+
+nav ul a {
+  color: var(--white-color);
+    padding: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'rajdhani';
+}
+
+/*Design au survol de Home*/
+ul li a{
+  text-decoration: none;
+}
+ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav ul a:hover {
+  color: var(--yellow-color);
+}
+.social:hover{
+  filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg)
+  brightness(109%) contrast(112%);
+}
+
+.hover:hover{
+  filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg)
+  brightness(109%) contrast(112%);
+}
+
+/* Styles pour la section d'en-tête (Hero) */
+#hero {
+  background-image: url(../Illustrations/Bathome1.png);
+  background-size: cover;
+  height: 800px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #19587d;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+#hero .titre {
+  margin: 20px 0;
+}
+
+.btn {
+  font-family: 'rajdhani';
+  font-size: 20px;
+  padding: 10px 50px;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--white-color);
+  padding: 10px 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+  background: linear-gradient(80deg, var(--gradient-white), var(--gradient-red));
+  box-shadow: var(--black-color) 15px 15px 90px;
+}
+
+.btn:hover {
+  background: linear-gradient(315deg, #890008, #eddebf);
+}
+
+#hero .fleche {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  margin-top: 250px;
+  cursor:pointer;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 50px;
+  top: 230px;
+}
+
+.scroll .social {
+  margin-top: 14px;
+}
+
+/* Styles pour la section des personnages de Batman */
+/*Au survol d'une image l'agrandit*/
+#batman-cinema .batman-personnage div:hover,
+#nemesis .nemesis_personnage div:hover,
+#alliees .alliees_personnage div:hover {
+  transform: scale(1.1);
+}
+.batman-personnage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nemesis_personnage {
+  display: flex;
+  justify-content: space-between;
+}
+
+#batman-cinema,
+#batman-justice-league {
+  margin-top: 40px;
+}
+
+#Bathome12 {
+  margin-left: 1190px; /* Décalage de 50 pixels vers la droite */
+}
+
+.alliees_personnage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+#batman-cinema .description,
+#batman-justice-league.description {
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 80%;
+}
+
+.personnage-info {
+  text-align: center;
+}
+
+/* Styles pour la section multimédia */
+#multimedia button {
+  position: relative;
+  top: 155px;
+  background-color: transparent;
+  border:none;
+}
+
+#multimedia button.right{
+  left:92%;
+}
+#multimedia button.left{
+  top: 200px; /* Décalage de 50 pixels vers le bas */
+}
+
+#multimedia .slider-multimedia {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 40px auto;
+}
+
+#multimedia .slider-image {
+  width: 100%;
+}
+
+#multimedia .slider-content {
+  padding: 15px;
+  text-align: left;
+  background: linear-gradient(160deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 60%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#multimedia p {
+  font-size: 14px;
+}
+
+#multimedia .yellow{
+  color: var(--yellow-color);
+  font-weight: bold;
+}
+
+.slider-multimedia {
+  display: flex;
+}
+
+.slider-image {
+  margin-right: 10px; /* Ajustez la valeur de la marge à votre convenance */
+}
+
+
+/* Multimédia et vidéo*/
+.image-bande-annonce {
+  display: flex;
+  justify-content: center;
+}
+.image-bande-annonce img {
+  width: 100%;
+}
+
+
+/* Design de la partie Contact-Formulaire*/
+#contact{
+  padding: 70px 0;
+  background: linear-gradient(143deg,rgba(237, 222, 191, 0.4),rgba(25, 88, 125, 0.4) 80%);
+}
+
+.form h2 {
+  font-family: 'Space Grotesk';
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+#contact .form {
+  width: 50%;
+  margin: auto;
+}
+.form .title {
+  font-size: 18px;
+  display: block;
+  margin: 20px 0;
+}
+.form input[type='email'],
+.form textarea {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+#contact .menu-btn,
+#contact .news {
+  margin-top: 15px;
+  border-bottom: 1px solid white;
+}
+#contact .icon img {
+  transform: rotate(90deg);
+  width: 19px;
+  margin-left: 55px;
+}
+::placeholder {
+  color: #eddebf;
+  font-size: 15px;
+}
+
+.form input[type='radio'] {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.btn-group label.btnform {
+  cursor: pointer;
+  width: 150px;
+  border: 2px solid;
+  border-image: linear-gradient(45deg,rgba(237, 222, 191, 0.4),rgba(25, 88, 125, 0.4))1;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-group label.btnform:hover{
+  background: linear-gradient(315deg, #890008, #eddebf);
+}
+[type='submit'] {
+  margin: 35px auto;
+  display: block;
+  width: 200px;
+  border: none;
+}
+
+/*je commence ici*/
+.menu-btn #dropdownlist {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 15px;
+  font-family: "space-grotesk";
+}
+
+  #dropdownlist .c-bg {
+    background-color: black;
+  }
+
+  .btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+/*Design de la partie citation*/
+#citations{
+  margin:90px;
+}
+
+#citations .citation-carte{
+  text-align :center;
+  width: 50%;
+  margin:0 auto; 
+}
+
+#citations .citation-auteur{
+  padding-top: 30px;
+  font-size:14px;
+  font-family: 'rajdhani';
+}
+
+#citations .guillemet-close{
+  float:right;
+}
+
+/*Désigne du footer*/
+footer{
+  margin-top: 162px;
+}
+
+footer .text-footer{
+  text-align: center;
+  font-size : 10px;
+}
+
+footer .social-footer{
+  text-align: center;
+  margin:50px 0;
+
+}
+
+footer .social-item{
+  padding:15px;
+}
+
+.icon-x{
+  margin:40px;
+}
