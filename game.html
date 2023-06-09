@@ -1,170 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GAME | PARTIE 2</title>
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
-    <script src="./assets/jquery.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/styles/main.css" />
-  </head>
-  <body>
-    <!-- Les bars en haut en bas et a gauche -->
-    <div class="up-bar"></div>
-    <div class="left-bar"></div>
-    <div class="right-bar"></div>
-    <!-- Voici le Scrollbar icone à coté -->
-    <div class="scroll">
-      <a href="#header"
-        ><img
-          class="arrow2 hoveryellow"
-          src="./assets/Logos/logo_bat_flèche.png"
-          alt="" /></a
-      ><img
-        class="social hoveryellow"
-        src="./assets/Logos/icon_facebook.png"
-        alt=""
-      />
-      <img
-        class="social hoveryellow"
-        src="./assets/Logos/icon_ig.png"
-        alt=""
-      /><img
-        class="social hoveryellow"
-        src="./assets/Logos/icon_tw.png"
-        alt=""
-      />
-      <a href="#contact"
-        ><img
-          class="arrow2 hoveryellow"
-          src="./assets/Logos/logo_bat_flèche_2.png"
-          alt=""
-      /></a>
-    </div>
 
-    <!-- Fin de cette scrollbar -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Formation avec SAYNA et Orange Digital Center 2">
+    <meta name="description" content="Projet fil rouge partie BATMAN PART 2 | GAME">
+    <meta name="author" content="Michael RAZAKAMAHEFA">
+    <title>PROJET BATMAN partie 2 | HOME</title>
+    <link rel="stylesheet" href="./ressources/styles/game.css">
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>-->
+    <script src="./ressources/scripts/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <!-- ENTÊTE DE LA PAGE -->
     <header id="header">
-      <nav class="container">
-        <a href="index.html"
-          ><img class="brand" src="./assets/Logos/logohome.png" alt=""
-        /></a>
-        <i class="fas fa-regular fa-2x fa-bars menu-mobile"></i>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="game.html">game</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Header en tete -->
-    <main>
-    <section id="hero_game">
-      <div class="container">
-        <div class="content">
-         
-          <h2 class="titre"> Let's play a<br> Little Game</h2>
-           
-        </div>
-        <img
-          class="fleche"
-          src="./assets/Logos_game/flèche_down_header.png"
-          alt="image"
-        />
-      </div>
-    </section>
-    <section></section>
-
-    <!-- demarrer la partie quiz -->
-
-    <section>
-      <div class="wrapped">
-        <div class="btn-game" id="entete">
-          <div class="chevalier">
-            <h2>Connaissez vous bien le chevalier noir?</h2>
-            <img with="100%"src="./assets/Illustrations_game/Batgame_2.png" alt="">
-          </div>
-          <button id="demarrer">Demarrer le quizz</button>
-        </div>
-
-        <div class="questions" id="questions">
-          <h2 class="nombredequestions">
-            <span id="current-question">1</span>/ <span id="total">15</span>
-          </h2>
-          <div class="card-quizz">
-            <div class="card-image">
-              <img src="./assets/Illustrations_game/Batgame_3.png" alt="">
-            </div>
-            <div class="card-body-quizz">
-              <div class="question-quizz">
-                Quel est l'autre nom de l'homme mystère?
-              </div>
-              <div class="choisirreponse">
-                <div class="qcm">
-                  <input type="checkbox" name="quizz0">
-                  <label for="">Le Sphinx</label>
-                </div>
-                <div class="qcm">
-                  <input type="checkbox" name="quizz0">
-                  <label for="">Saphir</label>
-                </div>
-                <div class="qcm">
-                  <input type="checkbox" name="quizz0">
-                  <label for="">Le joker</label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- bouton question suivant -->
-        <div class="btn-game">
-          <button id="question-suivante">QUESTION SUIVANTE</button>
-        </div>
-      </div>
-
-      
-
-
-    </section>
-    </main>
-
-     <!--footer-->
-     <footer>
         <div class="container">
-          <div class="text-footer">
-            <img src="./assets/Logos/icon_WB.png" alt="" />
-            Ce projet respecte l’univers cinématographique des films Batman
-            récents. Version Nolan & Snyder & Reeves
-          </div>
-          <div class="social-footer">
-            <a href="" class="social-item hoveryellow">
-              <img width="2%" src="./assets/Logos/logo_sayna_white.png" alt="" />
-              <img src="./assets/Logos/icon_x.png" alt="" />
-              <img width="2%" src="./assets/Logos/icon_DC.png" alt="" />
-            </a>
-            <a href="" class="social-item"
-              ><img
-                class="hoveryellow"
-                src="./assets/Logos/icon_facebook.png"
-                alt=""
-            /></a>
-            <a href="" class="social-item"
-              ><img class="hoveryellow" src="./assets/Logos/icon_ig.png" alt=""
-            /></a>
-            <a href="" class="social-item"
-              ><img class="hoveryellow" src="./assets/Logos/icon_tw.png" alt=""
-            /></a>
-          </div>
+            <div class="header">
+                <img src="ressources/Assets/Logos/logohome.png" alt="logo home" class="yellow-hover">
+                <div class="menu">
+                    <a class="Accueil yellow-hover" href="index.html">HOME</a>
+                    <a class="Accueil active yellow-hover" href="game.html">GAME</a>
+                </div>
+            </div>
         </div>
-      </footer>
-      <script src="./assets/js/game.js"></script>
-      <script src="./assets/js/scroll.js"></script>
-    </body>
-  </html>
+    </header>
+    <!-- FIN ENÊTE -->
+
+    <!--
+     ######################### [NOTE] ###########################
+    # L'effet canvas (une fois activé) etendu sur tout l'ecran #
+    # désactive tout effet sur le page (DOM)                   #
+    # aucune action n'est plus poss                            #
+    ############################################################
+     -->
+    <!-- Rajout de CANAVAS avec un effet chauve souris sur le curseur -->
+    <!-- <div id="div-canvas">
+        <canvas id="canvas"></canvas>
+        <img src="./ressources/assets/Logos/logohome.png" alt="curseur image" id="img-curseur">
+    </div> -->
+    <!-- Fin -->
+
+
+    <!-- CORPS DE LA PAGE -->
+    <main class="container main">
+
+        <!-- la section princiaple qui contient le corps de la page -->
+        <section class="intro-main">
+            <!-- section pour d'introduction  -->
+            <div class="intro">
+                <div class="content">
+                    <h1> Let's play a <br> little game... </h1>
+                </div>
+                <div class="icon-down">
+                    <img src="ressources/Assets/Logos/fleche_down_header.png" alt="plus">
+                </div>
+            </div>
+
+            <div class="logo-content">
+                <img src="ressources/Assets/Logos/logo_bat_fleche.png" alt="fleche haut" class="arrow up yellow-hover" id="top-arrow">
+                <img src="ressources/Assets/Logos/icon_facebook.png" alt="icon facebook" class="social-logo yellow-hover">
+                <img src="ressources/Assets/Logos/icon_ig.png" alt="icon instagrame" class="social-logo yellow-hover">
+                <img src="ressources/Assets/Logos/icon_tw.png" alt="icon twitter" class="social-logo yellow-hover">
+                <img src="ressources/Assets/Logos/logo_bat_fleche_2.png" alt="icon twitter" class="arrow down yellow-hover" id="down-arrow">
+            </div>
+            <!-- FIN section intro -->
+        </section>
+        <!-- FIN section home -->
+
+        <!-- section QUIZ -->
+        <section class="section-quiz" id="section-quiz">
+
+            <!-- Section demarrer le quiz -->
+            <div class="intro-quiz quiz" id="intro-quiz">
+                <h1>connaissez vous bien le chevalier noir ?</h1>
+                <img src="./ressources/assets/game/Batgame_2.png" alt="Start"> <br>
+                <button type="submit" class="btn-quiz" id="btn-start">démarrer le quiz</button>
+            </div>
+            <!-- Fin  -->
+
+            <!-- Debut chez des quiz -->
+            <div class="quiz-box quiz" id="quiz-box">
+                <h1> <span id="number-quiz">1</span>/<span id="total-quiz">10</span></h1>
+                <form action="" method="post" id="formulaire">
+                    <div class="question-box" id="question-box">
+                        <img src="./ressources/assets/game/Batgame_3.png" alt="illustration" id="img-illustrate">
+
+                        <!-- ICI le formulaire par defaut sans connexion API -->
+                        <div class="quiz-question" id="quiz-question">
+                            <p class="question" id="question">Echec connexion API ...</p>
+                            <span id="error-message"></span>
+                            <label for="checkbox1" class="response">
+                                <input type="checkbox" name="choix" id="checkbox1" value="">
+                                <p id="response" > error </p>
+                            </label>
+                            <label for="checkbox1" class="response">
+                                <input type="checkbox" name="choix" id="checkbox2" value="">
+                                <p id="response2" > error </p>
+                            </label>
+                            <label for="checkbox1" class="response">
+                                <input type="checkbox" name="choix" id="checkbox3" value="">
+                                <p id="response3" > error </p>
+                            </label>
+                        </div>
+                        <!-- Fin formulaire par defaut -->
+
+                    </div>
+                    <div class="btn-box" id="btn-box">
+                        <input type="submit" class="btn-quiz" value="question suivante" id="btn-next">
+                    </div>
+                </form>
+            </div>
+            <div class="popup-result quiz" id="popup-result">
+                <div class="box-resultat">
+                    <h1 id="titre"> Titre</h1>
+                    <p id="msg-result">Message reçu !</p>
+                    <a href="./game.html" class="btn-quiz">Recommencer le Quiz</a>
+                </div>
+            </div>
+
+            <!-- Fin des quiz -->
+        </section>
+        <!-- Fin section QUIZ -->
+
+    </main>
+    <!-- FIN CORPS DE LA PAGE -->
+
+    <!-- PIEDS DE PAGE -->
+    <footer class="container footer">
+        <div class="space-wb">
+            <img src="ressources/Assets/Logos/icon_WB.png" alt="">
+            <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeve</p>
+        </div>
+        <div class="img-footer">
+
+            <div class="logo-footer author">
+                <img src="ressources/Assets/Logos/logo_sayna_white.png" alt="logo SAYNA" class="yellow-hover">
+                <img src="ressources/Assets/Logos/icon_x.png" alt="x" class="yellow-hover">
+                <img src="ressources/Assets/Logos/icon_DC.png" alt="Logo DC" class="yellow-hover">
+            </div>
+
+            <div class="logo-footer social">
+                <a href="#"><img src="ressources/Assets/Logos/icon_facebook.png" alt="facebook" class="yellow-hover"></a>
+                <a href="#"><img src="ressources/Assets/Logos/icon_ig.png" alt="Instagram" class="yellow-hover"></a>
+                <a href="#"><img src="ressources/Assets/Logos/icon_tw.png" alt="Twitter" class="yellow-hover"></a>
+            </div>
+
+        </div>
+    </footer>
+    <!-- FIN PIEDS DE PAGE -->
+
+    <!-- INSERTION DES SCRIPT .JS  -->
+    <script src="./ressources/scripts/game.js"></script>
+    <script src="./ressources/scripts/canvas.js"></script>
+    <!-- FIN SCRIPT -->
+</body>
+
+</html>
