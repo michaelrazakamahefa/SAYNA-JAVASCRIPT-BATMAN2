@@ -1,0 +1,585 @@
+/* importation des police google font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@400;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2%;
+  background: url(../Assets/Illustrations/Bathome1.png) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-color: black;
+  color: white;
+  text-align: justify;
+  border: solid 3px #c4c4c41b;
+  /* definition police 
+  font-family: 'Rajdhani', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+  */
+}
+
+/* definition des polices */
+
+li a, h2, h3 {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+p, #form .titre, #form label {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+li a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+
+h2 {
+  font-size: 3.6rem;
+  margin: 100px 10px 10px 0;
+}
+
+.grand-titre {
+  font-weight: bolder;
+}
+
+#form .titre {
+  display: block;
+  font-size: 2rem;
+}
+
+#form label {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  width: 80%;
+}
+
+h3 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+em {
+  font-style: initial;
+  color: #f8f184;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+strong.batman {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+section {
+  padding-left: 40px;
+}
+
+/* commencement de l'entete */
+header {
+  margin-top: 5%;
+  border-bottom: solid 3px #c4c4c41b;
+}
+
+/* logo batman et bouton home */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6% 2% 6%;
+}
+
+nav ul {
+  width: 15%;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+}
+
+#home ul li {
+  list-style: none;
+}
+
+#home ul li a:hover {
+  color: #ffff00;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* navigation fixed */
+#navigationDroite img {
+  display: block;
+  margin-top: 30px;
+  position: relative;
+
+}
+
+#navigationDroite {
+  position: fixed;
+  right: 7%;
+  top: 50%;
+  z-index: 10;
+}
+
+.logoDroite {
+  padding-left: 40%;
+
+}
+
+/* section intro */
+.intro {
+  width: 620px;
+  text-align: center;
+  margin: 250px auto;
+  padding-left: 20px;
+
+}
+
+#ancre ul {
+  display: flex;
+  padding: 0;
+
+}
+
+.first {
+  margin-right: 50px;
+}
+
+#ancre ul li {
+  list-style: none;
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 30%, rgba(137, 0, 8, 0.4) 100%);
+  padding: 20px 40px;
+
+}
+
+/* pseudo class de section intro */
+#ancre ul li:hover {
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.7) 30%, rgba(137, 0, 8, 1) 100%);
+}
+
+/* fleche bas */
+.flechedw {
+  width: 100px;
+  position: relative;
+  left: 45%;
+}
+
+
+
+/* section Batman au cinema */
+
+/* section Nemesis */
+#nemesis>img {
+  position: absolute;
+  width: 200px;
+  margin-left: 50px;
+  margin-top: -100px;
+
+}
+
+
+/* section allié */
+
+.batDroite {
+  position: absolute;
+  margin-top: -260px;
+  left: 960px;
+}
+
+/* section ligue des justiciers*/
+#ligue div {
+  width: 1400px;
+  position: relative;
+  right: 15%;
+}
+
+.league {
+  margin-top: 80px;
+}
+
+/* section bande annonce  */
+
+.multimed {
+  display: flex;
+  margin: 80px 40px 0 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ensemble {
+  margin-bottom: 100px;
+}
+
+.description {
+  margin-left: 155px;
+  padding: 4px 10px;
+  width: 420px;
+  background: linear-gradient(158deg, rgba(237, 222, 191, 0.4) 0%, rgba(25, 88, 125, 0.4) 60%);
+  border-radius: 0 10px 10px 0;
+}
+
+.description p {
+  width: 400px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* fleche de la carouselle */
+
+
+/* fleche droite */
+.ensemble+div img, .multimed div .flecheG {
+  padding-bottom: 80px;
+}
+
+.debutBat img {
+  float: left;
+}
+
+/* section interractif */
+
+#form {
+  background-image: linear-gradient(158deg, rgba(237, 222, 191, 0.4) 0%, rgba(25, 88, 125, 0.4) 60%);
+  margin-top: 150px;
+  padding-top: 40px;
+}
+
+
+/* centrage du contenu du formulaire */
+/* #form * {
+  border: #ffff00 solid 1px;
+} */
+
+#form>div {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#form h2 {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.titre {
+  margin: 30px 0 10px 0;
+  padding: 0;
+}
+
+/* partie frequence  */
+
+/* rotation de la fleche */
+img.select-fleche {}
+
+/* didposition flex des p dans input */
+.radiobtn {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 15%;
+}
+
+/* cadre des label */
+.radiobtn label {
+  border: 2px solid;
+  border-image: linear-gradient(158deg, rgba(237, 222, 191, 0.6) 0%, rgba(25, 88, 125, 0.6) 60%)10;
+  font-family: 'Rajdhani', sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.radiobtn label:hover {
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.7) 30%, rgba(137, 0, 8, 1) 100%);
+}
+
+/* mise en forme de select */
+
+/* utilisation de select2 */
+
+select#frequence {
+  width: 100%;
+  position: relative;
+}
+
+/* background par defaut */
+.select2-container--default .select2-selection--single {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+/* partie option general */
+.select2-container--open .select2-dropdown--below {
+  border: none !important;
+}
+
+/* enlever la fleche */
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b, .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border: none !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+
+  background: url('../Assets/Logos/icon_flèche_2.png') no-repeat;
+  background-size: 15px;
+  transform: rotate(90deg);
+}
+
+/* affichage par defaut */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: white !important;
+  font-family: 'space grotesk', sans-serif;
+  font-size: 1.2rem;
+  border: none !important;
+}
+
+/* suppression de la barre de recherche */
+.select2-search--dropdown {
+  display: none !important;
+}
+
+/* partie selectionné */
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background: linear-gradient(158deg, rgba(237, 222, 191, 0.6) 0%, rgba(25, 88, 125, 0.6) 60%) !important;
+}
+
+/* element dans option */
+.select2-results__option {
+  background: linear-gradient(158deg, rgba(237, 222, 191, 0.6) 0%, rgba(25, 88, 125, 0.6) 60%), black;
+  border-top: 1px solid !important;
+  border-bottom: 1px solid !important;
+  border-image: linear-gradient(158deg, rgba(237, 222, 191, 0.6) 0%, rgba(25, 88, 125, 0.6) 60%)10;
+  padding: 10px !important;
+  font-family: 'space grotesk', sans-serif;
+  font-size: 1.2rem;
+}
+
+/* pour enlever les bouton du radio */
+input#comics, input#films, input#tout {
+  opacity: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+
+input[type="email"], .frequence, textarea, .news {
+  display: block;
+  outline: none;
+  color: white;
+  border: initial;
+  width: 550px;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  padding: 25px 0 5px 0;
+}
+
+::placeholder {
+  color: white;
+}
+
+/* valodator */
+.invalid {
+  font-family: 'Rajdhani', sans-serif;
+  font-style: italic;
+  color: red;
+  font-size: 1.2rem;
+}
+
+/* bouton confirmer, reste le hover */
+
+.confirmbtn input {
+  all: initial;
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 30%, rgba(137, 0, 8, 0.4) 100%);
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+  padding: 15px 40px;
+  margin: 30px auto;
+  display: block;
+  cursor: pointer;
+}
+
+
+.confirmbtn input:hover {
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.7) 30%, rgba(137, 0, 8, 1) 100%);
+}
+
+/* popup */
+
+/* fond semi transparent */
+.overlay {
+  background: linear-gradient(158deg, rgba(237, 222, 191, 0.2) 0%, rgba(25, 88, 125, 0.2) 60%), rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: none;
+
+}
+
+/* la box popup */
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 300px;
+  height: 200px;
+  margin: 15% auto;
+  background: linear-gradient(158deg, rgba(237, 222, 191, 0.6) 0%, rgba(25, 88, 125, 0.6) 60%), black;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.popup p {
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+}
+
+.btnClose {
+  align-self: flex-start;
+  cursor: pointer;
+  background-color: rgba(181, 2, 2, 0.784);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* section citation */
+
+.conteneur {
+  width: 70%;
+  margin: 100px auto;
+
+}
+
+.citation {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.citation p {
+  width: 100%;
+  padding: 0 40px;
+  text-align: center;
+}
+
+cite, footer div p {
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+div img[alt="guillemet ouvrant"], div img[alt="guillemet fermant"] {
+  margin: 50px;
+}
+
+div img[alt="guillemet fermant"] {
+  position: relative;
+  left: 75%;
+}
+
+/* footer */
+img[alt="logo Warner Bross"] {
+  float: left;
+}
+
+footer div {
+  margin-left: 25%;
+}
+
+.logofoot {
+  width: 80%;
+  padding-left: 13%;
+}
+
+.logofoot img {
+  margin: 10px;
+}
+
+/* pseudo class sur les cartes */
+.carte .item:hover {
+  transform: scale(1.1);
+}
+
+/* mise en place des elements enfants en flex */
+.carte {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+/* features nouveau legende */
+.carte .item {
+  position: relative;
+}
+
+.item .legende {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.532);
+  padding-top: 5px;
+  border: 2px solid rgba(73, 72, 72, 0.479);
+  display: none;
+}
+
+.legende .box-radius {
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.3) 30%, rgba(137, 0, 8, 0.3) 100%);
+  border-radius: 30px;
+  margin: 20px 40px;
+}
+
+.box-radius h3 {
+  font-size: 1.2rem;
+  padding: 15px 10px;
+}
+
+.box-radius span {
+  color: #f8f184;
+  font-weight: normal;
+}
+
+.box-radius .miniature {
+  float: left;
+  display: block;
+  max-width: 70px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.legende * {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* definition du non debordement de la largeur */
+.league, video {
+  max-width: 100%;
+}

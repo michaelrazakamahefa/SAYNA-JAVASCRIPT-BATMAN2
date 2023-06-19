@@ -1,161 +1,129 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Formation avec SAYNA et Orange Digital Center 2">
-    <meta name="description" content="Projet fil rouge partie BATMAN PART 2 | GAME">
-    <meta name="author" content="Michael RAZAKAMAHEFA">
-    <title>PROJET BATMAN partie 2 | HOME</title>
-    <link rel="stylesheet" href="./ressources/styles/game.css">
-    <!--<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>-->
-    <script src="./ressources/scripts/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./styles/game.css">
+    <title>Game | Projet Batman</title>
 </head>
 
 <body>
-    <!-- ENTÊTE DE LA PAGE -->
-    <header id="header">
-        <div class="container">
-            <div class="header">
-                <img src="ressources/Assets/Logos/logohome.png" alt="logo home" class="yellow-hover">
-                <div class="menu">
-                    <a class="Accueil yellow-hover" href="index.html">HOME</a>
-                    <a class="Accueil active yellow-hover" href="game.html">GAME</a>
-                </div>
+    <header>
+        <nav id="home">
+            <a onmouseover="changeImagelogoHome()" onmouseout="reset()" href="index.html"><img
+                    src="Assets/Logos/logohome.png" alt="logo emblématique de Batman" id="idLogoHome"
+                    class="logoHome jaune" /></a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="game.html">GAME</a></li>
+
+            </ul>
+        </nav>
+        <div id="navigationDroite">
+            <a href="#home" onmouseover="changeImageBatHaut()" onmouseout="reset()"><img id="batHaut"
+                    src="Assets/Logos/logo_bat_flèche.png" class="jaune" alt="fleche haut" /></a>
+            <div class="logoDroite">
+                <a href="https://www.facebook.com" onmouseover="changeImageFb()" onmouseout="reset()"
+                    target="_blank"><img src="Assets/Logos/icon_facebook.png" id="fb" class="jaune"
+                        alt="logo Facebook" /></a>
+                <a href="https://www.instagram.com" onmouseover="changeImageIg()" onmouseout="reset()"
+                    target="_blank"><img src="Assets/Logos/icon_ig.png" id="ig" class="jaune"
+                        alt="logo Instagram" /></a>
+                <a href="https://www.twitter.com" onmouseover="changeImageTw()" onmouseout="reset()"
+                    target="_blank"><img src="Assets/Logos/icon_tw.png" id="tw" class="jaune" alt="logo Twitter" /></a>
             </div>
+            <a href="#form" onmouseover="changeImageBatBas()" onmouseout="reset()"><img id="batBas"
+                    src="Assets/Logos/logo_bat_flèche_2.png" class="jaune" alt="fleche bas" /></a>
         </div>
+
     </header>
-    <!-- FIN ENÊTE -->
-
-    <!--
-     ######################### [NOTE] ###########################
-    # L'effet canvas (une fois activé) etendu sur tout l'ecran #
-    # désactive tout effet sur le page (DOM)                   #
-    # aucune action n'est plus poss                            #
-    ############################################################
-     -->
-    <!-- Rajout de CANAVAS avec un effet chauve souris sur le curseur -->
-    <!-- <div id="div-canvas">
-        <canvas id="canvas"></canvas>
-        <img src="./ressources/assets/Logos/logohome.png" alt="curseur image" id="img-curseur">
-    </div> -->
-    <!-- Fin -->
-
-
-    <!-- CORPS DE LA PAGE -->
-    <main class="container main">
-
-        <!-- la section princiaple qui contient le corps de la page -->
-        <section class="intro-main">
-            <!-- section pour d'introduction  -->
-            <div class="intro">
-                <div class="content">
-                    <h1> Let's play a <br> little game... </h1>
-                </div>
-                <div class="icon-down">
-                    <img src="ressources/Assets/Logos/fleche_down_header.png" alt="plus">
-                </div>
-            </div>
-
-            <div class="logo-content">
-                <img src="ressources/Assets/Logos/logo_bat_fleche.png" alt="fleche haut" class="arrow up yellow-hover" id="top-arrow">
-                <img src="ressources/Assets/Logos/icon_facebook.png" alt="icon facebook" class="social-logo yellow-hover">
-                <img src="ressources/Assets/Logos/icon_ig.png" alt="icon instagrame" class="social-logo yellow-hover">
-                <img src="ressources/Assets/Logos/icon_tw.png" alt="icon twitter" class="social-logo yellow-hover">
-                <img src="ressources/Assets/Logos/logo_bat_fleche_2.png" alt="icon twitter" class="arrow down yellow-hover" id="down-arrow">
-            </div>
-            <!-- FIN section intro -->
+    <main>
+        <!--section Intro-->
+        <section class="intro">
+            <h1><strong class="batman">Let’s play a <br>little game...</strong></h1>
         </section>
-        <!-- FIN section home -->
 
-        <!-- section QUIZ -->
-        <section class="section-quiz" id="section-quiz">
+        <div class="flechedw">
+            <img src="Assets/Logos/flèche_down_header.png" alt="fleche" />
+        </div>
+        <!-- section quiz -->
 
-            <!-- Section demarrer le quiz -->
-            <div class="intro-quiz quiz" id="intro-quiz">
-                <h1>connaissez vous bien le chevalier noir ?</h1>
-                <img src="./ressources/assets/game/Batgame_2.png" alt="Start"> <br>
-                <button type="submit" class="btn-quiz" id="btn-start">démarrer le quiz</button>
+        <section>
+            <div class="conteneurChevalier">
+                <h2>Conaissez vous bien le chevalier noir ?</h2>
+                <div class="img-chevalier">
+                    <img src="./Assets/Illustrations-game/Batgame_2.png" alt="chevalier noir">
+                </div>
+                <div class="btn-quiz">
+                    <a class="btn-quiz-link" href="#conteneurQuiz">DEMARRER LE QUIZ</a>
+                </div>
             </div>
-            <!-- Fin  -->
-
-            <!-- Debut chez des quiz -->
-            <div class="quiz-box quiz" id="quiz-box">
-                <h1> <span id="number-quiz">1</span>/<span id="total-quiz">10</span></h1>
-                <form action="" method="post" id="formulaire">
-                    <div class="question-box" id="question-box">
-                        <img src="./ressources/assets/game/Batgame_3.png" alt="illustration" id="img-illustrate">
-
-                        <!-- ICI le formulaire par defaut sans connexion API -->
-                        <div class="quiz-question" id="quiz-question">
-                            <p class="question" id="question">Echec connexion API ...</p>
-                            <span id="error-message"></span>
-                            <label for="checkbox1" class="response">
-                                <input type="checkbox" name="choix" id="checkbox1" value="">
-                                <p id="response" > error </p>
-                            </label>
-                            <label for="checkbox1" class="response">
-                                <input type="checkbox" name="choix" id="checkbox2" value="">
-                                <p id="response2" > error </p>
-                            </label>
-                            <label for="checkbox1" class="response">
-                                <input type="checkbox" name="choix" id="checkbox3" value="">
-                                <p id="response3" > error </p>
-                            </label>
+            <div id="conteneurQuiz" class="conteneurQuiz">
+                <div class="compteur">
+                    <p><span class="num-question"></span> / <span class="total-question"></span></p>
+                </div>
+                <div class="carte-quiz">
+                    <div class="carte-img"><img alt=""></div>
+                    <div class="carte">
+                        <div class="carte-question">
+                            <p></p>
                         </div>
-                        <!-- Fin formulaire par defaut -->
+                        <div class="carte-reponses">
+                            <div class="qcm">
+                                <input id="choix1" class="qcm-radio" name="choix" type="checkbox">
+                                <label class="qcm-label" for="choix1"></label>
+                            </div>
+                            <div class="qcm">
+                                <input id="choix2" class="qcm-radio" name="choix" type="checkbox">
+                                <label class="qcm-label" for="choix2"></label>
+                            </div>
+                            <div class="qcm">
+                                <input id="choix3" class="qcm-radio" name="choix" type="checkbox">
+                                <label class="qcm-label" for="choix3"></label>
+                            </div>
+                            <span class="controller"></span>
+                        </div>
 
                     </div>
-                    <div class="btn-box" id="btn-box">
-                        <input type="submit" class="btn-quiz" value="question suivante" id="btn-next">
-                    </div>
-                </form>
-            </div>
-            <div class="popup-result quiz" id="popup-result">
-                <div class="box-resultat">
-                    <h1 id="titre"> Titre</h1>
-                    <p id="msg-result">Message reçu !</p>
-                    <a href="./game.html" class="btn-quiz">Recommencer le Quiz</a>
+                </div>
+                <div class="btn">
+                    <span class="illustr-gauche"></span>
+                    <button class="btn-suivant">QUESTION SUIVANTE</button>
+                    <span class="illustr-droite"></span>
                 </div>
             </div>
-
-            <!-- Fin des quiz -->
+            <div class="overlay-game">
+                <div class="popup">
+                    <h2 class="popup-titre">Lorem, ipsum dolor sit amet consectetur </h2>
+                    <p class="popup-texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto!</p>
+                    <button class="restart">RECOMMENCER LE QUIZ</button>
+                </div>
+            </div>
         </section>
-        <!-- Fin section QUIZ -->
 
     </main>
-    <!-- FIN CORPS DE LA PAGE -->
-
-    <!-- PIEDS DE PAGE -->
-    <footer class="container footer">
-        <div class="space-wb">
-            <img src="ressources/Assets/Logos/icon_WB.png" alt="">
-            <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeve</p>
+    <footer>
+        <div><img src="Assets/Logos/icon_WB.png" alt="logo Warner Bross" />
+            <p>Ce projet respecte l’univers cinématographique des films Batman récents.
+                Version Nolan & Snyder & Reeves</p>
         </div>
-        <div class="img-footer">
-
-            <div class="logo-footer author">
-                <img src="ressources/Assets/Logos/logo_sayna_white.png" alt="logo SAYNA" class="yellow-hover">
-                <img src="ressources/Assets/Logos/icon_x.png" alt="x" class="yellow-hover">
-                <img src="ressources/Assets/Logos/icon_DC.png" alt="Logo DC" class="yellow-hover">
-            </div>
-
-            <div class="logo-footer social">
-                <a href="#"><img src="ressources/Assets/Logos/icon_facebook.png" alt="facebook" class="yellow-hover"></a>
-                <a href="#"><img src="ressources/Assets/Logos/icon_ig.png" alt="Instagram" class="yellow-hover"></a>
-                <a href="#"><img src="ressources/Assets/Logos/icon_tw.png" alt="Twitter" class="yellow-hover"></a>
-            </div>
-
+        <div class="logofoot">
+            <a href="#" onmouseover="changeSaynaFooter()" onmouseout="resetFooter()"><img class="jaune_footer"
+                    id="SaynaFooter" src="Assets/Logos/logo_sayna_white.png" alt="logo SAYNA" /></a>
+            <a href="#" onmouseover="changeXfooter()" onmouseout="resetFooter()"><img class="jaune_footer" id="xFooter"
+                    src="Assets/Logos/icon_x.png" alt="logo x" /></a>
+            <a href="#" onmouseover="changeDcFooter()" onmouseout="resetFooter()"><img class="jaune_footer"
+                    id="dcFotter" src="Assets/Logos/icon_DC.png" alt="logo DC" /></a>
+            <a href="#" onmouseover="changeFbFooter()" onmouseout="resetFooter()"><img class="jaune_footer"
+                    id="fbFooter" src="Assets/Logos/icon_facebook.png" alt="logo Facebook" /></a>
+            <a href="#" onmouseover="changeIgFooter()" onmouseout="resetFooter()"><img class="jaune_footer"
+                    id="igFooter" src="Assets/Logos/icon_ig.png" alt="logo Instagram" /></a>
+            <a href="#" onmouseover="changeTwFooter()" onmouseout="resetFooter()"><img class="jaune_footer"
+                    id="twFooter" src="Assets/Logos/icon_tw.png" alt="logo Twitter" /></a>
         </div>
-    </footer>
-    <!-- FIN PIEDS DE PAGE -->
-
-    <!-- INSERTION DES SCRIPT .JS  -->
-    <script src="./ressources/scripts/game.js"></script>
-    <script src="./ressources/scripts/canvas.js"></script>
-    <!-- FIN SCRIPT -->
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/scriptGame.js"></script>
 </body>
 
 </html>

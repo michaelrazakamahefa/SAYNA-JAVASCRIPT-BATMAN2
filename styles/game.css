@@ -1,0 +1,365 @@
+ /* importation des police google font */
+ @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@400;700&display=swap');
+
+ * {
+     box-sizing: border-box;
+     /* margin: 0;
+  padding: 0; */
+ }
+
+ /* * {
+     border: red solid 1px;
+ } */
+
+ html {
+     font-size: 10px;
+ }
+
+ body {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 2%;
+     background: url(../Assets/Illustrations-game/Batgame_1.png) no-repeat;
+     background-size: contain;
+     background-position-x: center;
+     background-color: black;
+     color: white;
+     text-align: justify;
+     border: solid 3px #c4c4c41b;
+     /* definition police 
+  font-family: 'Rajdhani', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+  */
+ }
+
+ /* definition des polices */
+
+ li a, a, h1, h2, h3, button, span {
+     font-family: 'Rajdhani', sans-serif;
+ }
+
+ p, #form .titre, #form {
+     font-family: 'Space Grotesk', sans-serif;
+ }
+
+ li a, a, button {
+     text-decoration: none;
+     font-size: 2rem;
+     color: white;
+ }
+
+
+ h2 {
+     font-size: 3.6rem;
+     margin: 100px 10px 10px 0;
+ }
+
+
+ .grand-titre {
+     font-weight: bolder;
+ }
+
+ #form .titre {
+     display: block;
+     font-size: 2rem;
+ }
+
+ #form label {
+     font-size: 1.2rem;
+ }
+
+ p {
+     font-size: 1.8rem;
+     width: 80%;
+ }
+
+ h3 {
+     font-size: 1.8rem;
+     text-align: center;
+ }
+
+ em {
+     font-style: initial;
+     color: #f8f184;
+     font-weight: bold;
+ }
+
+ strong {
+     font-weight: 400;
+     font-size: 1.8rem;
+ }
+
+ strong.batman {
+     font-weight: 700;
+     font-size: 4rem;
+     text-transform: uppercase;
+ }
+
+ section {
+     padding-left: 40px;
+ }
+
+ /* commencement de l'entete */
+ header {
+     margin-top: 5%;
+     border-bottom: solid 3px #c4c4c41b;
+ }
+
+ /* logo batman et bouton home */
+ nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 6% 2% 6%;
+ }
+
+ nav ul {
+     width: 15%;
+     display: flex;
+     padding-left: 0;
+     justify-content: space-between;
+ }
+
+ #home ul li {
+     list-style: none;
+ }
+
+ #home ul li a:hover {
+     color: #ffff00;
+     text-decoration: underline;
+     font-weight: bold;
+ }
+
+ /* navigation fixed */
+ #navigationDroite img {
+     display: block;
+     margin-top: 30px;
+     position: relative;
+
+ }
+
+ #navigationDroite {
+     position: fixed;
+     right: 7%;
+     top: 50%;
+     z-index: 10;
+ }
+
+ .logoDroite {
+     padding-left: 40%;
+
+ }
+
+ /* section intro */
+ .intro {
+     width: 620px;
+     margin: 180px 20px 500px 10px;
+ }
+
+ #ancre ul {
+     display: flex;
+     padding: 0;
+
+ }
+
+ .first {
+     margin-right: 50px;
+ }
+
+ #ancre ul li {
+     list-style: none;
+     background: linear-gradient(90deg, rgba(237, 222, 191, 0.4) 30%, rgba(137, 0, 8, 0.4) 100%);
+     padding: 20px 40px;
+
+ }
+
+ /* pseudo class de section intro */
+ #ancre ul li:hover {
+     background: linear-gradient(90deg, rgba(237, 222, 191, 0.7) 30%, rgba(137, 0, 8, 1) 100%);
+ }
+
+ /* fleche bas */
+ .flechedw {
+     width: 80px;
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ /* section game */
+ /* chevalier noir */
+ .conteneurChevalier {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .conteneurChevalier h2 {
+     text-transform: uppercase;
+     margin-bottom: 30px;
+     font-weight: 700;
+ }
+
+ .conteneurChevalier .btn-quiz {
+     margin: 70px 0;
+ }
+
+ /* style des bouton */
+ .conteneurChevalier a, .conteneurQuiz .btn-suivant, .popup .restart {
+     background: linear-gradient(to right, rgb(214, 192, 175, 0.7)0%, rgb(194, 117, 50, 0.7)100%);
+     padding: 15px 50px;
+     letter-spacing: 2px;
+ }
+
+ .conteneurChevalier a:hover, .conteneurQuiz .btn-suivant:hover, .popup .restart:hover {
+     background: linear-gradient(to right, rgb(214, 192, 175, 1)0%, rgb(194, 117, 50, 1)100%);
+ }
+
+ /* quiz */
+ .conteneurQuiz * {
+     /* border: #ffff00 solid 1px; */
+ }
+
+ .conteneurQuiz {
+     flex-direction: column;
+     width: 70%;
+     margin: 100px auto;
+     display: none;
+     position: relative;
+ }
+
+ .conteneurQuiz p {
+     width: 100%;
+ }
+
+ .conteneurQuiz .carte-quiz {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .carte-quiz .carte {
+     flex: 2;
+ }
+
+ .carte-quiz .carte-img {
+     flex: 1;
+ }
+
+ .carte-quiz .carte-img img {
+     max-width: 100%;
+ }
+
+ .carte-question>p {
+     margin-bottom: 40px;
+ }
+
+ .conteneurQuiz .compteur>p {
+     text-align: center;
+     font-size: 4rem;
+     font-family: 'Rajdhani', sans-serif;
+     font-weight: 900;
+ }
+
+ .conteneurQuiz .qcm {
+     background-color: #757575;
+     margin: 15px auto;
+     padding: 10px 0;
+     font-family: 'Space Grotesk', sans-serif;
+     font-size: 2rem;
+ }
+
+ .qcm label {
+     cursor: pointer;
+ }
+
+ .conteneurQuiz .btn {
+     margin: 70px auto;
+     display: flex;
+     align-items: center;
+ }
+
+ .conteneurQuiz .controller {
+     color: red;
+ }
+
+ /* popup score */
+ .overlay-game {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     background-color: rgb(0, 0, 0, 0.8);
+     z-index: 20;
+     display: none;
+ }
+
+ .popup {
+     display: flex;
+     width: 60%;
+     flex-direction: column;
+     align-items: center;
+     margin: 100px auto;
+     padding: 80px;
+     background: linear-gradient(136deg, rgba(75, 49, 29, 0.4)0%, rgba(196, 133, 77, 0.4)100%), black;
+     border-radius: 30px;
+     border: 1px solid;
+     border-image: linear-gradient(to right, rgb(107, 107, 107)0%, rgba(49, 49, 49, 1)100%)1;
+     text-align: center;
+
+ }
+
+ .popup * {
+     margin: 60px 0;
+ }
+
+ .popup .popup-titre {
+     margin: 0;
+     text-decoration: underline;
+     letter-spacing: 2px;
+ }
+
+ .popup .popup-texte {
+     letter-spacing: 2px;
+     line-height: 1.5;
+ }
+
+ input {
+     margin-left: 10px;
+     margin-right: 10px;
+     width: 30px;
+     height: 30px;
+ }
+
+ .conteneurQuiz .btn-suivant, .popup .restart {
+     border: none;
+     color: white;
+     outline: none;
+     cursor: pointer;
+ }
+
+ /* footer */
+ img[alt="logo Warner Bross"] {
+     float: left;
+ }
+
+ footer div {
+     margin-left: 25%;
+ }
+
+ .logofoot {
+     width: 80%;
+     padding-left: 13%;
+ }
+
+ .logofoot img {
+     margin: 10px;
+ }
+
+ cite, footer div p {
+     font-size: 1.2rem;
+     font-style: normal;
+ }
